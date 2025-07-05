@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.resources {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
