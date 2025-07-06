@@ -15,6 +15,11 @@ export default function Navbar() {
   return (
     <nav>
       <ul className={styles.navbar}>
+        <li className={styles.logo}>
+          <Link href="/">
+            <img src="/logo.webp" alt="Logo" />
+          </Link>
+        </li>
         <li>
           <Link href="/">Home</Link>
         </li>
