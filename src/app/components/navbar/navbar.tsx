@@ -43,7 +43,7 @@ export default function Navbar() {
           )}
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/about">About</Link>
         </li>
       </ul>
     </nav>
