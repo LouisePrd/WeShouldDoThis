@@ -48,22 +48,25 @@ export default function AuthPage() {
           required
         />
 
+      <div className={styles.buttonsContainer}>
         <div className={styles.buttonWrapper}>
           <button type="submit">
             {mode === "login" ? "Se connecter" : "S’inscrire"}
           </button>
         </div>
-      </form>
-      <div className={styles.buttonWrapper}>
-        <button
-          onClick={() => {
-            setMode(mode === "login" ? "signup" : "login");
-            setMessage("");
-          }}
-        >
-          {mode === "login" ? "Créer un compte" : "J’ai déjà un compte"}
-        </button>
+        <div className={styles.buttonWrapper}>
+          <button
+            type="button"
+            onClick={() => {
+              setMode(mode === "login" ? "signup" : "login");
+              setMessage("");
+            }}
+          >
+            {mode === "login" ? "Créer un compte" : "J’ai déjà un compte"}
+          </button>
+        </div>
       </div>
+      </form>
 
       {message && <p className={styles.authMessage}>{message}</p>}
     </div>
