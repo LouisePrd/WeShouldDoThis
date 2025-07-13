@@ -24,25 +24,25 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/ideas">Places to go</Link>
+          <Link href="/ideas">Lieux</Link>
         </li>
         <li
           className={styles.resources}
           onMouseEnter={() => setShowResources(true)}
           onMouseLeave={() => setShowResources(false)}
         >
-          <Link href="/resources">Resources</Link>
+          <Link href="/ressources">Ressources</Link>
 
           {isMounted && (
             <ul className={`${styles.dropdown} ${showResources ? styles.visible : styles.hidden}`}>
               <li>
-                <Link href="/resources/podcasts">Podcasts</Link>
+                <Link href="/ressources/podcasts">Podcasts</Link>
               </li>
               <li>
-                <Link href="/resources/films">Films</Link>
+                <Link href="/ressources/films">Films</Link>
               </li>
               <li>
-                <Link href="/resources/articles">Articles</Link>
+                <Link href="/ressources/articles">Articles</Link>
               </li>
             </ul>
           )}
