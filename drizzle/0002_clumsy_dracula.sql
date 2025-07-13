@@ -1,0 +1,1 @@
+ALTER TABLE "films" ALTER COLUMN "duration" SET DATA TYPE text;
