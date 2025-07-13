@@ -1,0 +1,20 @@
+.film-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 8px;
+  width: 200px;
+  transition: transform 0.2s;
+}
+
+.film-card:hover {
+  transform: translateY(-4px);
+}
+
+.film-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
