@@ -1,0 +1,10 @@
+{
+  "schema": "./src/app/database/schema.ts",
+  "out": "./drizzle",
+  "dialect": "postgresql",
+  "url": "${DATABASE_URL}",
+  "migrations": {
+    "tableName": "migrations",
+    "directory": "./drizzle/migrations"
+  }
+}
