@@ -1,0 +1,12 @@
+.film-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.film-list li {
+  margin: 1rem;
+}

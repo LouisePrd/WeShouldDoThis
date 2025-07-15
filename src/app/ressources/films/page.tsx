@@ -1,5 +1,8 @@
+
+
 import { getFilms } from "@/app/database/queries/films";
-import FilmPageClient from "./FilmPageClient";
+import styleFilm from "@/app/ressources/films/films.module.css";
+import FilmPageClient from "./filmPageClient";
 
 export default async function FilmsPage() {
   const allFilmsRaw = await getFilms();
@@ -15,8 +18,9 @@ export default async function FilmsPage() {
 
   return (
     <div>
-      <h1>Films</h1>
+      <h1 className={styleFilm.h1}>Films</h1>
       <FilmPageClient initialFilms={allFilms} />
+
     </div>
   );
 }

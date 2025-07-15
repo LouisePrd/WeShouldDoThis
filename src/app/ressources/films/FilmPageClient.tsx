@@ -43,7 +43,7 @@ export default function FilmPageClient({ initialFilms }: { initialFilms: Film[] 
       {filteredFilms.length === 0 ? (
         <p>Aucun film ne correspond à ce filtre.</p>
       ) : (
-        <ul>
+        <ul className="film-list">
           {filteredFilms.map((film) => (
             <li key={film.id}>
               <FilmCard
