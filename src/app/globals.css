@@ -1,19 +1,23 @@
+@font-face {
+  font-family: 'SpongeboyMeBob';
+  src: url('/fonts/SpongeboyMeBob.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
-  --background: #98A1BC;
+  --background: #8DD5E4;
   --foreground: #555879;
-  --pale-color: #F4EBD3;
+  --yellow-color: #FEF677;
+  --white-color: #FFFFFF;
   --font-size-base: 2rem;
   --font-size-small: 1rem;
   --font-size-large: 2.6rem;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #555879;
-    --foreground: #98A1BC;
-  }
+  --font-family-title: 'SpongeboyMeBob', sans-serif;
+  --font-family-body: Trebuchet, Helvetica, sans-serif;
 }
-
 
 
 html,
@@ -29,9 +33,7 @@ body {
   min-height: 100vh;
   color: var(--foreground);
   background: var(--background);
-  font-family: Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-family-body);
 }
 
 main {
@@ -51,23 +53,33 @@ a {
 
 h1 {
   font-size: var(--font-size-large);
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 3.5rem;
   text-align: center;
-  color: var(--pale-color);
   font-weight: bold;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5rem;
+  font-family: 'SpongeboyMeBob', sans-serif;
+  color: black;
 }
 
 h2 {
   font-size: var(--font-size-base);
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  font-family: 'SpongeboyMeBob', sans-serif;
+  color: var(--white-color);
 }
 
 p {
   font-size: var(--font-size-small);
+  font-family: var(--font-family-body);
 }

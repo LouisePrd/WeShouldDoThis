@@ -1,0 +1,41 @@
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: max-content;
+}
+
+.card {
+  min-width: 360px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-small);
+  border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.navButton {
+  font-size: var(--font-size-small);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+}
