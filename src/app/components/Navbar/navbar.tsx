@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
+//import { useSession } from "next-auth/react";
 
 export default function Navbar() {
+  //const { data: session, status } = useSession();
   const [showResources, setShowResources] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -53,6 +55,9 @@ export default function Navbar() {
         <li>
           <Link href="/auth">Connect</Link>
         </li>
+          <li className={styles.connectedText}>
+            Connecté en tant que <strong></strong>
+          </li>
       </ul>
     </nav>
   );
