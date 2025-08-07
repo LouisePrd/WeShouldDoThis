@@ -52,3 +52,11 @@
 .visible {
   display: block;
 }
+
+.connectedText {
+  margin-left: auto;
+  padding-left: 1rem;
+  color: var(--pink-color);
+  font-size: var(--font-size-small);
+  font-weight: bold;
+}

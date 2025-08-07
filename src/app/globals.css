@@ -8,15 +8,15 @@
 
 :root {
   --background: #8DD5E4;
-  --foreground: #555879;
   --yellow-color: #FEF677;
   --white-color: #FFFFFF;
+  --pink-color: #F77C86;
   --font-size-base: 2rem;
   --font-size-small: 1rem;
-  --font-size-large: 2.6rem;
+  --font-size-large: 2.8rem;
 
   --font-family-title: 'SpongeboyMeBob', sans-serif;
-  --font-family-body: Trebuchet, Helvetica, sans-serif;
+  --font-family-body: Helvetica, sans-serif;
 }
 
 
@@ -53,8 +53,8 @@ a {
 
 h1 {
   font-size: var(--font-size-large);
-  margin-bottom: 2.5rem;
-  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  margin-top: 5rem;
   text-align: center;
   font-weight: bold;
   width: fit-content;
@@ -62,7 +62,7 @@ h1 {
   margin-right: auto;
   padding: 0.5rem;
   font-family: 'SpongeboyMeBob', sans-serif;
-  color: black;
+  color: var(--pink-color);
 }
 
 h2 {
