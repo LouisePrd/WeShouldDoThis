@@ -34,20 +34,18 @@ export async function getLastItems() {
     // Fusionner tous les éléments
     const allItems = [...lastFilms, ...lastPlaces, ...lastRessources];
 
-    // Trier par date (en string), puis prendre les 5 plus récents
+    // ✅ Filtrer les éléments sans createdAt (nulls exclus)
     const sorted = allItems
-      .filter((item) => item.createdAt !== null)
-      .sort(
-        (a, b) =>
-          new Date(b.createdAt as string).getTime() -
-          new Date(a.createdAt as string).getTime()
+      .filter((item): item is typeof item & { createdAt: string } => item.createdAt !== null)
+      .sort((a, b) =>
+        new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       )
       .slice(0, 5);
 
-    // ✅ Sérialisation : convertir les dates en string ISO
+    // ✅ Sérialiser proprement
     const serialized = sorted.map((item) => ({
       ...item,
-      createdAt: item.createdAt ? new Date(item.createdAt).toISOString() : null,
+      createdAt: new Date(item.createdAt).toISOString(),
     }));
 
     return serialized;
